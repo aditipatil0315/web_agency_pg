@@ -6,15 +6,14 @@ import Card from '../../components/Cards/Cards'
 const Section3 = () => {
 
     const cardData = [
-        { heading: "Customization", text: "Develop specialized tools tailored specifically to address your unique business challenges." },
-        { heading: "Secure & Reliable", text: "Strong security ensures data privacy without commercialization." },
-        { heading: "Tailored Solutions for Every Industry", text: "Our tools fit any industry, from manufacturing to retail.." },
+        { heading: "Custom Website Design", text: "Beautiful, responsive, and tailored to your brand identity." },
+        { heading: "SEO-Optimized Content Strategy", text: "Content designed to rank high on search engines and engage visitors." },
+        { heading: "Lead-Focused Designs", text: "Every website element is crafted to drive conversions." },
       ];
 
       const cardData_2 = [
-        { heading: " User-Focused Design", text: "User-friendly software with a clean, intuitive design and customizable UI/UX." },
-        { heading: "Scalability & Growth", text: "Purposefully Built for Scalability and Long-Term Growth Opportunities" },
-        { heading: "Secure & Reliable", text: "Strong security ensures data privacy without commercialization." },
+        { heading: "Industry-Specific Expertise", text: "Stand out in your field with a website designed for your target audience." },
+        { heading: "Perfect performance on all devices.", text: "Fast Load Times & Mobile-Friendly Design" },
       ];
 
 

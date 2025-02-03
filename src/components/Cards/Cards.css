@@ -21,7 +21,7 @@
 }
 
 .card:hover {
-    background-color: #deebff;
+    background-color: #d3e3fa;
     transform: translateY(-3px); 
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
 
