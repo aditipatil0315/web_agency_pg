@@ -89,7 +89,8 @@ const Section5 = () => {
       </section>
     
 
-
+<br />
+<br />
       <section className="faq">
         <h2 className="faq__title">FAQ</h2>
 

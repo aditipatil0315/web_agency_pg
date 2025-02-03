@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
 import Section1 from './components/Section_1/Section1'
 import Section2 from './components/Section_2/Section2'
 import Section3 from './components/Section_3/Section3'
@@ -15,6 +16,7 @@ function App() {
         <Section3/>
         <Section4/>
         <Section5/>
+        <Footer/>
 
         
       </div>
