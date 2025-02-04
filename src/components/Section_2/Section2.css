@@ -65,9 +65,12 @@
     font-size: 16px;
     font-weight: 600;
     z-index: 10;
+    cursor: pointer;
 }
 
 .scale {
+    cursor: pointer;
+
     background-color: black;
     height: 10px;
     width: 10px;
