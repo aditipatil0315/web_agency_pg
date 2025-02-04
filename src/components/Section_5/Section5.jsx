@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import img2 from '../../assets/img2.png'
 
 
-// import subscribeIcon from "./subscribe-icon.png";
-// import requestIcon from "./request-icon.png";
-// import reviewIcon from "./review-icon.png";
-
 const Section5 = () => {
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -28,10 +24,8 @@ const Section5 = () => {
       <h2 className="section5__title">How it works</h2>
       <div className="section5__cards">
         
-        {/* Card 1 */}
         <div className="section5__card">
           <div className="section5__card-icon">
-            {/* <span>📞</span> */}
           </div>
           <h3 className="section5__card-title">1. Book a Free Consultation Call </h3>
           <p className="section5__card-text">
@@ -39,10 +33,8 @@ const Section5 = () => {
           </p>
         </div>
 
-        {/* Card 2 */}
         <div className="section5__card">
           <div className="section5__card-icon">
-            {/* <span>🧠</span> */}
 
           </div>
           <h3 className="section5__card-title">2. Website Strategy & Design </h3>
@@ -51,10 +43,8 @@ const Section5 = () => {
           </p>
         </div>
 
-        {/* Card 3 */}
         <div className="section5__card">
           <div className="section5__card-icon">
-            {/* <span>✔️</span> */}
 
           </div>
           <h3 className="section5__card-title">3. Launch Your Stunning Website </h3>
@@ -70,20 +60,20 @@ const Section5 = () => {
     <section className="testimonials" data-scroll-section>
         <h2 className="testimonials__title">Testimonials</h2>
         <div className="testimonials__cards">
-          {/* Testimonial 1 */}
+
           <div className="testimonials__card">
             <p>
-              "Our new website not only looks incredible but also doubled our monthly traffic in just 2 months! "
+              "Our new website not only looks incredible but also doubled our monthly traffic in just 2 months!" 
             </p>
-            <span>- John Doe</span>
+            <span>- Dhana Rufex</span>
           </div>
 
-          {/* Testimonial 2 */}
+
           <div className="testimonials__card">
             <p>
-              "They delivered more than we expected. Leads started pouring in after the launch of our new website!"
+            "They delivered more than we expected. Leads started pouring in after the launch of our new website!" 
             </p>
-            <span>- Jane Smith</span>
+            <span>- Mohammed</span>
           </div>
         </div>
       </section>

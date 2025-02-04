@@ -5,14 +5,13 @@ import bannerImg from '../../assets/banner_girl_.png';
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Function to handle smooth scrolling
   const handleScroll = (e, id) => {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault(); 
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setMenuOpen(false); // Close the mobile menu
+    setMenuOpen(false); 
   };
 
   return (

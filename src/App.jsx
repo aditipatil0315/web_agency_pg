@@ -1,58 +1,105 @@
-import { useEffect, useRef } from 'react'
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Section1 from './components/Section_1/Section1'
-import Section2 from './components/Section_2/Section2'
-import Section3 from './components/Section_3/Section3'
-import Section4 from './components/Section_4/Section4'
-import Section5 from './components/Section_5/Section5'
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Section1 from "./components/Section_1/Section1";
+import Section2 from "./components/Section_2/Section2";
+import Section3 from "./components/Section_3/Section3";
+import Section4 from "./components/Section_4/Section4";
+import Section5 from "./components/Section_5/Section5";
+
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
-  const handleScroll = (e, id) => {
-    e.preventDefault(); 
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      
-      if (scroll) {
-        scroll.update();
-      }
-    }
-    setMenuOpen(false); 
-  };
-
-
-  const scrollRef = useRef(null);
+  const lenisRef = useRef(null);
 
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
+    const lenis = new Lenis({
+      duration: 0.3,
       smooth: true,
-      lerp: 0.1, 
+      easing: (t) => 1 - Math.pow(1 - t, 2),
     });
 
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    lenisRef.current = lenis;
+
     return () => {
-      scroll.destroy(); 
+      lenis.destroy();
     };
+  }, []);
+
+  useEffect(() => {
+    
+    gsap.fromTo(
+      ".section3 .grid",
+      { opacity: 0, y: 70 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section3",
+          start: "top 80%",
+          toggleActions: "play none play reset",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".section5__cards",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section5",
+          start: "top 80%",
+          toggleActions: "play none play reset",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".testimonials__cards",
+      { opacity: 0, y: 70 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".testimonials",
+          start: "top 80%",
+          toggleActions: "play none play reset",
+        },
+      }
+    );
   }, []);
 
   return (
     <>
-      <div className='main' ref={scrollRef} data-scroll-container>
-        <Section1/>
-        <Section2/>
-        <Section3/>
-        <Section4/>
-        <Section5/>
-        <Footer/>
-
-        
+      <div className="main">
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Footer />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
