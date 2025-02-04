@@ -17,3 +17,11 @@ html, body {
   width: 100%;
   height: auto;
 }
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}

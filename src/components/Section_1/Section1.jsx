@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import './Section1.css';
-import bannerImg from '../../assets/banner.png';
+import bannerImg from '../../assets/banner_girl_.png';
 
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Function to handle smooth scrolling
+  const handleScroll = (e, id) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setMenuOpen(false); // Close the mobile menu
+  };
+
   return (
-    <div className='section1'>
+    <div className='section1' data-scroll-section id="home">
       <div className="navbar">
         <div className="logo">
           Step <br />Digital
@@ -17,10 +27,10 @@ const Section1 = () => {
         </div>
 
         <div className={`links ${menuOpen ? "open" : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <a href="#home" onClick={(e) => handleScroll(e, "home")}>Home</a>
+          <a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a>
+          <a href="#products" onClick={(e) => handleScroll(e, "products")}>Products</a>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a>
         </div>
       </div>
 

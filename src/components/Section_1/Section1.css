@@ -2,6 +2,8 @@
     height: 100vh;
     width: 100%;
     padding: 0 50px;
+    overflow: hidden;
+    background-color: #fff;
   }
   
   .navbar {
@@ -9,16 +11,10 @@
     height: 9vh;
     width: 100%;
     display: flex;
-    /* padding: 0 50px; */
     justify-content: space-between;
     align-items: center;
     color: black;
-    /* position: fixed;
-    background: rgba(252, 248, 248, 0.621); 
-    backdrop-filter: blur(90px); 
-    width: 100%;
-    top: 0;
-    left: 0;   */
+    
   
   }
   
@@ -56,6 +52,10 @@
     /* margin-top: 5rem; */
     height: 80vh;
     width: 100%;
+    overflow: hidden;
+    overflow: visible; /* Allow elements to animate */
+
+
   }
   
   .left {

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Section2.css'
 
+
 const Section2 = () => {
+
+ 
+
+
+
   return (
-    <div className='section2'>
+    <div className='section2' data-scroll-section id='about'>
         <div className="sec2_left">
             <h3>About Us</h3>
 <br />

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" data-scroll-section id="contact">
         <br />
       <div className="footer__wave">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none">

@@ -24,7 +24,7 @@ const Section5 = () => {
 
   return (
     <>
-    <section className="section5">
+    <section className="section5" data-scroll-section>
       <h2 className="section5__title">How it works</h2>
       <div className="section5__cards">
         
@@ -67,7 +67,7 @@ const Section5 = () => {
     </section>
 
 
-    <section className="testimonials">
+    <section className="testimonials" data-scroll-section>
         <h2 className="testimonials__title">Testimonials</h2>
         <div className="testimonials__cards">
           {/* Testimonial 1 */}
@@ -91,7 +91,7 @@ const Section5 = () => {
 
 <br />
 <br />
-      <section className="faq">
+      <section className="faq" data-scroll-section>
         <h2 className="faq__title">FAQ</h2>
 
         <div className="faq__item">
