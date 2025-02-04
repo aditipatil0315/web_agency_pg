@@ -58,6 +58,8 @@
     border: 1px solid black;
     border-radius: 30px;
     overflow: hidden;
+    cursor: pointer;
+
 }
 
 .btn_spam {
