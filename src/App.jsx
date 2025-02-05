@@ -37,6 +37,72 @@ function App() {
   }, []);
 
   useEffect(() => {
+
+    gsap.fromTo(
+      ".navbar",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section1",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".section1 .left",
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section1",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  
+    gsap.fromTo(
+      ".section1 .right",
+      { opacity: 0, x: 100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section1",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+
+
+
+    gsap.fromTo(
+      ".sec2_left h3, .sec2_left h2, .sec2_left button",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".section2",
+          start: "top 80%",
+          toggleActions: "play none play reset",
+        },
+      }
+    );
     
     gsap.fromTo(
       ".section3 .grid",
