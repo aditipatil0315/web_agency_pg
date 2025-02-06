@@ -30,7 +30,7 @@
     align-items: center;
     gap: 32px;
     position: absolute;
-    top: 70px;
+    /* top: 70px; */
     right: 20px;
     z-index: 102;
   }
