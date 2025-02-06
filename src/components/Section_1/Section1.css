@@ -43,6 +43,8 @@
     display: none;
     font-size: 30px;
     cursor: pointer;
+    z-index: 100;
+
   }
   
   .content_section {
