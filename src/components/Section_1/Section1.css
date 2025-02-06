@@ -14,8 +14,7 @@
     justify-content: space-between;
     align-items: center;
     color: black;
-    position: relative;
-  z-index: 101;
+    z-index: 100;
   
   }
   
@@ -29,10 +28,6 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
-    position: absolute;
-    /* top: 70px; */
-    right: 20px;
-    z-index: 102;
   }
   
   .links a {
