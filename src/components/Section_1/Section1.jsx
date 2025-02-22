@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import './Section1.css';
 import bannerImg from '../../assets/img3.jpg';
 import logo_img from '../../assets/step_tech_new.png';
+import client1 from '../../assets/client1.png';
+import client2 from '../../assets/client2.png';
+import client3 from '../../assets/client3.png';
+
 
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +17,15 @@ const Section1 = () => {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
     setMenuOpen(false); 
+
+
   };
+
+  const clients = [
+    { name: "Rajog", img: client1, link: "https://helobimkos.com/" },
+    { name: "Godrej", img: client2, link: "https://theater.xyz/" },
+    { name: "Afcons", img: client3, link: "https://vedaamrith.com/" },
+  ];
 
   return (
     <div className='section1' data-scroll-section id="home">
@@ -49,13 +61,19 @@ const Section1 = () => {
       <div className="clients-section">
       <h2 className="clients-heading">Our Clients</h2>
       <div className="clients-container">
-        <div className="client-box">Rajog</div>
-        <div className="client-box">Godrej</div>
-        <div className="client-box">Afcons</div>
-        <div className="client-box">Hiranandani</div>
+        {clients.map((client, index) => (
+          <a
+            key={index}
+            href={client.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="client-box"
+          >
+            <img src={client.img} alt={client.name} className="client-image" />
+          </a>
+        ))}
       </div>
-      
-      </div>
+    </div>
 
       <div className="cta">
       <br />
