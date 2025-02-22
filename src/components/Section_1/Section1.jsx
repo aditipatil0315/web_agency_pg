@@ -60,6 +60,8 @@ const Section1 = () => {
 
       <div className="clients-section">
       <h2 className="clients-heading">Our Clients</h2>
+      <h5 className="clients-click">(Click to Visit)</h5>
+      <br />
       <div className="clients-container">
         {clients.map((client, index) => (
           <a

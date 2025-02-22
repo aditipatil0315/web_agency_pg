@@ -180,7 +180,11 @@
 
 .clients-heading {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.clients-click {
+  font-size: 18px;
 }
 
 .clients-container {
