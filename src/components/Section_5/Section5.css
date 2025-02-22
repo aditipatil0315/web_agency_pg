@@ -50,14 +50,14 @@
 
   .section5__card-icon span {
     font-size: 2rem;
-    color: #2F70FF;
+    color: #4663B7;
   }
   
   
   
   .section5__card-title {
     margin-bottom: 10px;
-    color: #2F70FF;
+    color: #4663B7;
   }
   
   .section5__card-text {
@@ -69,6 +69,10 @@
     .section5__cards {
       flex-direction: column;
       align-items: center;
+    }
+
+    .section5__card {
+      width: 100%;
     }
   }
 
@@ -120,7 +124,7 @@
   }
   
   .testimonials__card span {
-    color: #2F70FF;
+    color: #4663B7;
     font-weight: bold;
   }
   
@@ -162,7 +166,7 @@
   
   .faq__question {
     font-weight: bold;
-    color: #2F70FF;
+    color: #4663B7;
     margin-bottom: 10px;
   }
   

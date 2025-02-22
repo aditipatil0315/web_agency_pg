@@ -21,6 +21,7 @@ const Footer = () => {
          <b> Let’s create a website that drives traffic, attracts leads, and grows
           your business. </b>
         </p>
+        <br />
         <button className="explore_btn">Book a Call</button>
       </div>
     </footer>

@@ -5,9 +5,9 @@ import img2 from '../../assets/img2.png'
 const Section4 = () => {
   return (
     <section className="section4" data-scroll-section>
-    <div className="sec4_left">
+    {/* <div className="sec4_left">
       <img src= {img2} alt="Section visual" />
-    </div>
+    </div> */}
     <div className="sec4_right">
       <div className="sec4_right_upper">
         <h2>Why Choose Us?</h2>

@@ -3,15 +3,15 @@
 .section4 {
     font-family: Montserrat, sans-serif;
     width: 100%;
-    min-height: 100vh;
-    padding: 20px 50px;
+    min-height: 50vh;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     text-align: center;
 }
 
   
-  .sec4_left {
+  /* .sec4_left {
     flex: 1;
     box-sizing: border-box;
   }
@@ -20,19 +20,18 @@
     width: 90%;
     height: auto;
     display: block;
-  }
+  } */
   
   .sec4_right {
-    flex: 1;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
   }
   
   .sec4_right_upper,
   .sec4_right_lower {
-    flex: 1;
+    /* flex: 1; */
     text-align: left;
     padding: 20px;
   }
@@ -57,7 +56,7 @@
 
   .sec4_right span {
     font-size: 1.5rem;
-    color: #2F70FF;
+    color: #4663B7;
   }
   
 
@@ -66,10 +65,18 @@
       flex-direction: column;
     }
     
-    .sec4_left,
+
+
+  
     .sec4_right {
       width: 100%;
     }
+
+    .sec4_right_upper,
+  .sec4_right_lower {
+    width: 100%;
+    
+  }
     
     .sec4_right {
       flex-direction: column;

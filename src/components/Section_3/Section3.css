@@ -3,7 +3,7 @@
 .section3 {
     font-family: Montserrat, sans-serif;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
