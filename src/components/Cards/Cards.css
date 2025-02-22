@@ -67,9 +67,9 @@
 
 @media (max-width: 480px) {
     .card {
-        max-width: 80%;
+        max-width: 90%;
         min-height: 180px;
-                padding: 10px;
+        padding: 10px;
         margin: 8px;
     }
 
