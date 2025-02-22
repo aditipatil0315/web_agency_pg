@@ -251,7 +251,7 @@
   
   @media (max-width: 768px) {
     .section1 {
-      height: 190vh;
+      height: 250vh;
       padding: 0;
       margin: 0;
     }
@@ -362,7 +362,7 @@
   
   @media (max-width: 480px) {
     .section1 {
-      height: 180vh;
+      height: 220vh;
       padding: 0;
       margin: 0;
 
