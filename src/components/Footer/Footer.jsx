@@ -22,8 +22,9 @@ const Footer = () => {
           your business. </b>
         </p>
         <br />
-        <button className="explore_btn">Book a Call</button>
-      </div>
+        <a href="https://calendly.com/enquire-stepconsultancy/seo-landing-page" target="_blank" rel="noopener noreferrer">
+  <button className="explore_btn">Book a Call</button>
+</a>      </div>
     </footer>
   );
 };
