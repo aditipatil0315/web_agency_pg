@@ -270,6 +270,12 @@
       text-align: center;
     }
 
+    .explore_btn {
+      width: 170px;
+      height: 45px;
+      font-size: 16px;
+    }
+
     .clients-container {
       flex-direction: column;
       gap: 15px;
